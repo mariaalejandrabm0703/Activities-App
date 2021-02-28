@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Item = () => {
+export const Item = ({item}) => {
     return (
         <div>
-            <p>Item</p>
+             <button className="btn btn-success m-2">{item}</button>
         </div>
     )
 }

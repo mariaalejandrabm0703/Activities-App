@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { Component } from "react";
+import { Columna } from "./Columna";
 
-export const Tablero = () => {
+export default class Tablero extends Component {
+  render() {
     return (
-        <div>
-            <p>Tablero</p>
-        </div>
-    )
+      <div className="row mt-2 border">
+        {this.props.activities.map((items, i) => (
+          <Columna key={i} items={items} />
+        ))}
+      </div>
+    );
+  }
 }

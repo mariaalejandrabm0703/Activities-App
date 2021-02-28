@@ -1,9 +1,12 @@
 import React from 'react'
+import { Item } from './Item'
 
-export const Columna = () => {
+export const Columna = ({items}) => {
     return (
-        <div>
-            <p>Columna</p>
+        <div className="col">
+            {items.map((item, i)=>(
+               <Item item={item}/>
+            ))}
         </div>
     )
 }
