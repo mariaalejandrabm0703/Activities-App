@@ -1,11 +1,6 @@
 import React from 'react'
 
-export const Item = ({item, setCurrentAct}) => {
-
-    const handleClick = (e) =>{
-        e.preventDefault();
-        setCurrentAct(e.target.textContent)
-    }
+export const Item = ({item, handleClick}) => {    
 
     return (
         <div>
