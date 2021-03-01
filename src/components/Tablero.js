@@ -6,7 +6,11 @@ export default class Tablero extends Component {
     return (
       <div className="row mt-2 border">
         {this.props.activities.map((items, i) => (
-          <Columna key={i} items={items} />
+          <Columna
+            key={i}
+            items={items}
+            setCurrentAct={this.props.setCurrentAct}
+          />
         ))}
       </div>
     );

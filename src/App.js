@@ -10,12 +10,18 @@ function App() {
     ["Act4-1", "Act4-2"],
   ]);
 
+  const [currentAct, setCurrentAct] = useState("");
+
   return (
     <div className="container mt-2">
       <h2>Activities:</h2>
       <hr />
-      <Control />
-      <Tablero activities={activities} setActivities={setActivities} />
+      <Control
+        currentAct={currentAct}
+        activities={activities}
+        setActivities={setActivities}
+      />
+      <Tablero activities={activities} setCurrentAct={setCurrentAct} />
     </div>
   );
 }
