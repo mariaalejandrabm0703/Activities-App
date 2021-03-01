@@ -33,17 +33,19 @@ function App() {
   });
 
   useEffect(() => {
-    let position = 0;
+    if (currentAct !== "") {
+      let position = 0;
 
-    // busco posicion del elemento a mover
-    position = searchPosition(activities, currentAct);
+      // busco posicion del elemento a mover
+      position = searchPosition(activities, currentAct);
 
-    if (position === 0) {
-      setMove({ right: true, left: false });
-    } else if (position === activities.length - 1) {
-      setMove({ left: true, right: false });
-    } else {
-      setMove({ left: true, right: true });
+      if (position === 0) {
+        setMove({ right: true, left: false });
+      } else if (position === activities.length - 1) {
+        setMove({ left: true, right: false });
+      } else {
+        setMove({ left: true, right: true });
+      }
     }
   }, [currentAct, activities]);
 
@@ -104,7 +106,7 @@ function App() {
         handleLeft={handleLeft}
         handleRight={handleRight}
       />
-      <Tablero activities={activities} handleClick={handleClick} />
+      <Tablero currentAct={currentAct} activities={activities} handleClick={handleClick} />
     </div>
   );
 }

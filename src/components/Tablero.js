@@ -8,8 +8,9 @@ export default class Tablero extends Component {
         {this.props.activities.map((items, i) => (
           <Columna
             key={i}
-            step={i+1}
+            step={i + 1}
             items={items}
+            currentAct={this.props.currentAct}
             handleClick={this.props.handleClick}
           />
         ))}
