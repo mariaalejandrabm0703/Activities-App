@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/Activities-App/static/js/main.d0ca816a.chunk.js",
+    "main.js.map": "/Activities-App/static/js/main.d0ca816a.chunk.js.map",
+    "runtime-main.js": "/Activities-App/static/js/runtime-main.80f01ae5.js",
+    "runtime-main.js.map": "/Activities-App/static/js/runtime-main.80f01ae5.js.map",
+    "static/js/2.713382b0.chunk.js": "/Activities-App/static/js/2.713382b0.chunk.js",
+    "static/js/2.713382b0.chunk.js.map": "/Activities-App/static/js/2.713382b0.chunk.js.map",
+    "index.html": "/Activities-App/index.html",
+    "static/js/2.713382b0.chunk.js.LICENSE.txt": "/Activities-App/static/js/2.713382b0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80f01ae5.js",
+    "static/js/2.713382b0.chunk.js",
+    "static/js/main.d0ca816a.chunk.js"
+  ]
+}
